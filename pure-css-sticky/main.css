@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+  background: #d8f7ff;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 30% auto;
+}
+
+figure {
+  background: #bbe2ed;
+  text-align: center;
+}
+
+article {
+  padding: 2em;
+}
+
+h3 {
+  font-size: 3em;
+  margin-bottom: .2em;
+}
+
+p {
+  line-height: 2em;
+}
+
+img {
+  width: 250px;
+  /* Sticky magic */
+  position: sticky;
+  top: 20px;
+}
+
+.entered {
+  -webkit-animation: flip-scale-2-hor-bottom 0.5s linear both;
+  animation: flip-scale-2-hor-bottom 0.5s linear both;
+}
+
+/* Sticky magic animation */
+@-webkit-keyframes flip-scale-2-hor-bottom {
+  0% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+  50% {
+    -webkit-transform: translateY(50%) rotateX(90deg) scale(2);
+            transform: translateY(50%) rotateX(90deg) scale(2);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  100% {
+    -webkit-transform: translateY(100%) rotateX(180deg) scale(1);
+            transform: translateY(100%) rotateX(180deg) scale(1);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+  }
+}
+
+@keyframes flip-scale-2-hor-bottom {
+  0% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+  50% {
+    -webkit-transform: translateY(50%) rotateX(90deg) scale(2);
+            transform: translateY(50%) rotateX(90deg) scale(2);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  100% {
+    -webkit-transform: translateY(100%) rotateX(180deg) scale(1);
+            transform: translateY(100%) rotateX(180deg) scale(1);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+  }
+}

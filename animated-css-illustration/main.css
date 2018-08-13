@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+  background: #c9edff;
+
+  /* Center everything */
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 5em;
+  text-shadow: 5px 5px #c9edff, 8px 8px rgba(0, 0, 0, .19);
+  animation: slide-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: 0 25px;
+}
+
+h3:before,
+h3:after {
+  content: '';
+  position: absolute;
+  border-top: 2px solid rgba(0, 0, 0, .3);
+}
+
+/* Top title */
+h3:nth-of-type(1)::before {
+  width: 3%;
+  height: 4px;
+  margin: 3% 0 0 -4%;
+}
+
+h3:nth-of-type(1)::after {
+  width: 50%;
+  height: 4px;
+  margin: 3% 0 0 2%;
+}
+
+/* Bottom title */
+h3:nth-of-type(2) {
+  float: right;
+  /* margin-top: -3%; */
+  margin: -1% 14% 0 0;
+}
+
+h3:nth-of-type(2)::before {
+  width: 44%;
+  height: 4px;
+  margin: 6% 0 0 -46%;
+}
+
+h3:nth-of-type(2)::after {
+  width: 16%;
+  height: 4px;
+  margin: 6% 0 0 3%;
+}
+
+/* Slanted look */
+h1,
+h3 {
+  transform: matrix(1, -0.25, 0, 1, 0, 0);
+  -ms-transform: matrix(1, -0.25, 0, 1, 0, 0);
+  -webkit-transform: matrix(1, -0.25, 0, 1, 0, 0);
+  text-transform: uppercase;
+}
+
+/* Star background */
+#container:before {
+  content: '';
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  background: rgba(0, 0, 0, .08);
+  position: fixed;
+  height: 1300px,;
+  width: 1300px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  animation: slide-tr 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* Animation keyframes */
+@keyframes scale-up-hor-center {
+  0% {
+    transform: scaleX(0.4) matrix(1, -0.25, 0, 1, 0, 0);
+  }
+  100% {
+    transform: scaleX(1) matrix(1, -0.25, 0, 1, 0, 0);
+  }
+}
+
+@keyframes slide-tr {
+  0% {
+    transform: translateY(30px) translateX(100px) matrix(1, -0.25, 0, 1, 0, 0);
+  }
+  100% {
+    transform: translateY(0) translate(0) matrix(1, -0.25, 0, 1, 0, 0);
+  }
+}

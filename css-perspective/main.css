@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -23,7 +25,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   
   display: grid;
   grid-template-columns: auto;

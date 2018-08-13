@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pure CSS Sticky</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+  <section>
+    <figure>
+      <img src="images/ice-cream.svg">
+    </figure>
+
+    <article>
+      <h3>Ice Cream</h3>
+
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, deleniti asperiores soluta tempora dignissimos quod
+        vero enim, suscipit voluptatibus vitae consequatur similique ratione natus magni nisi beatae nobis totam! Maxime!</p>
+      <p>Tempora, voluptates at eum officia quibusdam necessitatibus error, ratione culpa repellendus dolor similique, minima
+        voluptate? Iusto tempora, natus illo libero facilis in.</p>
+      <p>Quos cupiditate velit accusamus quia fuga. Quisquam qui natus, id repellendus impedit error possimus, in explicabo
+        sapiente laudantium ratione magni tempora voluptatum?</p>
+      <p>Ex, architecto distinctio. Odit esse magnam aperiam recusandae corporis at ut deserunt, temporibus error, rem aliquam
+        quas. Nisi officia blanditiis nemo explicabo.</p>
+      <p>Ea at asperiores reiciendis, voluptate dolore, quos porro temporibus aperiam quae accusamus perferendis ad iure non
+        similique necessitatibus ex fugiat, possimus praesentium!</p>
+    </article>
+  </section>
+
+  <section>
+    <figure>
+      <img src="images/sundae.svg">
+    </figure>
+
+    <article>
+      <h3>Sundae</h3>
+
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, deleniti asperiores soluta tempora dignissimos quod
+        vero enim, suscipit voluptatibus vitae consequatur similique ratione natus magni nisi beatae nobis totam! Maxime!</p>
+      <p>Tempora, voluptates at eum officia quibusdam necessitatibus error, ratione culpa repellendus dolor similique, minima
+        voluptate? Iusto tempora, natus illo libero facilis in.</p>
+      <p>Quos cupiditate velit accusamus quia fuga. Quisquam qui natus, id repellendus impedit error possimus, in explicabo
+        sapiente laudantium ratione magni tempora voluptatum?</p>
+      <p>Ex, architecto distinctio. Odit esse magnam aperiam recusandae corporis at ut deserunt, temporibus error, rem aliquam
+        quas. Nisi officia blanditiis nemo explicabo.</p>
+      <p>Ea at asperiores reiciendis, voluptate dolore, quos porro temporibus aperiam quae accusamus perferendis ad iure non
+        similique necessitatibus ex fugiat, possimus praesentium!</p>
+    </article>
+  </section>
+
+  <section>
+    <figure>
+      <img src="images/eaten.svg">
+    </figure>
+
+    <article>
+      <h3>Eat it up</h3>
+
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, deleniti asperiores soluta tempora dignissimos quod
+        vero enim, suscipit voluptatibus vitae consequatur similique ratione natus magni nisi beatae nobis totam! Maxime!</p>
+      <p>Tempora, voluptates at eum officia quibusdam necessitatibus error, ratione culpa repellendus dolor similique, minima
+        voluptate? Iusto tempora, natus illo libero facilis in.</p>
+      <p>Quos cupiditate velit accusamus quia fuga. Quisquam qui natus, id repellendus impedit error possimus, in explicabo
+        sapiente laudantium ratione magni tempora voluptatum?</p>
+      <p>Ex, architecto distinctio. Odit esse magnam aperiam recusandae corporis at ut deserunt, temporibus error, rem aliquam
+        quas. Nisi officia blanditiis nemo explicabo.</p>
+      <p>Ea at asperiores reiciendis, voluptate dolore, quos porro temporibus aperiam quae accusamus perferendis ad iure non
+        similique necessitatibus ex fugiat, possimus praesentium!</p>
+    </article>
+  </section>
+
+  <script src="enter-view.js"></script>
+  <script>
+    enterView({
+      selector: 'img',
+      enter: (el) => {
+        el.classList.add('entered');
+      }
+    });
+  </script>
+</body>
+
+</html>
