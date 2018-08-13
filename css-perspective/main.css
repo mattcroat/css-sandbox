@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body,
+html {
+  /* No scrollbars */
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Work Sans', sans-serif;
+  
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+/* Clip paths */
+.bg,
+.bg2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.bg {
+  -webkit-clip-path: polygon(72% 74%, 100% 27%, 100% 100%, 5% 100%);
+  clip-path: polygon(72% 74%, 100% 27%, 100% 100%, 5% 100%);
+
+  z-index: -1;
+  background-color: #226dbc;
+}
+
+.bg2 {
+  -webkit-clip-path: polygon(63% 69%, 100% 9%, 100% 100%, 5% 100%);
+  clip-path: polygon(63% 69%, 100% 9%, 100% 100%, 5% 100%);
+
+  z-index: -2;
+  background-color: #2a5f98;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50% auto;
+  /* Center vertical */
+  align-self: center;
+  height: auto;
+  margin: 0 50px;
+}
+
+ul {
+  list-style: none;
+  /* Perspective on parent so we can use it on child */
+  perspective: 1000px;
+}
+
+ul li {
+  display: grid;
+  grid-template-columns: 20% auto;
+  border-radius: 10px;
+  padding: 1.4em;
+  cursor: pointer;
+  transform: rotateY(-30deg) rotateX(15deg);
+  position: absolute;
+  border-bottom: 4px solid rgba(0, 0, 0, .2);
+  mix-blend-mode: multiply;
+}
+
+ul li:nth-child(1) {
+  background: #bfe8fc;
+  top: -105px;
+  z-index: 2;
+}
+
+ul li:nth-child(2) {
+  background: #faffc8;
+  z-index: 1;
+}
+
+ul li:nth-child(3) {
+  background: rgb(242, 228, 255);
+  top: 105px;
+}
+
+ul li:hover {
+  transform: rotateY(-22deg) rotateX(7deg) scale(1.03);
+  transition: transform .4s ease-out;
+  z-index: 3;
+  mix-blend-mode: normal;
+}
+
+img {
+  width: 70px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: .6em;
+}
+
+#left > p {
+  color: rgb(73, 73, 73);
+  line-height: 1.5em;
+}
