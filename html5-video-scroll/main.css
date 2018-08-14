@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #c6d7de;
+}
+
+.container {
+  margin-left: 4em;
+}
+
+#v0 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+#set-height {
+  display: block;
+}
+
+section {
+  z-index: 1;
+  position: relative;
+}
+
+.content {
+  position: sticky;
+  width: 100%;
+  top: 33.3%;
+}
+
+h1,
+p {
+  margin-top: 1em;
+}
+
+h1 {
+  font-size: 3em;
+  background: #fff;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+section:nth-of-type(1) {
+  height: 1200px;
+}
+section:nth-of-type(2) {
+  height: 1200px;
+}
+section:nth-of-type(3) {
+  height: 1200px;
+}
+section:nth-of-type(4) {
+  height: 1000px;
+}
+section:nth-of-type(5) {
+  height: 4000px;
+}
+
+.entered {
+  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+/* Animation keyframes */
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
