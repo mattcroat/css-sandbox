@@ -1,0 +1,154 @@
+body,
+html {
+  height: calc(100% - 2em);
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: linear-gradient(45deg, #4A00FB 0%, #E600FF 100%) no-repeat fixed;
+}
+
+aside {
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 40px;
+      grid-template-columns: auto 40px;
+  padding: 2em;
+}
+
+aside img {
+  width: 40px;
+  cursor: pointer;
+}
+
+aside figure {
+  margin: 0;
+}
+
+aside figure figcaption {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+aside nav {
+  background: #fff;
+}
+
+aside nav .active {
+  position: absolute;
+  display: block;
+  background: #fff;
+  width: 50%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+aside nav ul {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+aside nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8em;
+  display: block;
+  padding: 1.5em 3em;
+  background-color: rgba(255, 255, 255, 0.35);
+  color: #000;
+}
+
+main {
+  background: #fff;
+  padding: 1em 1.4em;
+}
+
+main h1 {
+  margin: 0;
+}
+
+main p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+main .cta {
+  display: block;
+  color: #fff;
+  background: #0e7fff;
+  text-decoration: none;
+  padding: 8px 50px;
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 4px;
+  margin: 2em 0;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20% auto;
+        grid-template-columns: 20% auto;
+    padding: 2em;
+  }
+  img {
+    display: none;
+  }
+  aside {
+    background: #dce1f6;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 20% auto;
+        grid-template-rows: 20% auto;
+    padding: 0;
+  }
+  aside #avatar {
+    border-radius: 50%;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    margin: 2em auto 1em auto;
+  }
+  aside figcaption {
+    text-align: center;
+    color: #000;
+  }
+  aside nav {
+    background: none;
+  }
+  aside nav ul {
+    display: block;
+    margin-top: 2em;
+    position: relative !important;
+    background: none !important;
+    width: 100% !important;
+  }
+  aside nav ul li a:hover {
+    background-color: #fff;
+  }
+  main {
+    padding: 4em;
+    background: #fff url("../images/bg.svg") no-repeat bottom right;
+    background-size: 70%;
+  }
+  main .cta {
+    display: inline-block;
+    font-size: 1.3em;
+    padding: .8em 3em;
+  }
+  main h1 {
+    font-size: 3em;
+    margin-top: 2em;
+  }
+  main p {
+    font-size: 1.5em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
